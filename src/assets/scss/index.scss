@@ -1,0 +1,85 @@
+@import "./variables";
+@import "./fonts";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: $darkNavy;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: $dimGray;
+
+  @media (max-with: 768px) {
+    color: #fff;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: $lexendDeca;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: $dimGray;
+}
+
+h1 {
+  font-family: $spaceMono;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: $spaceMono;
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: $spaceMono;
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-family: $spaceMono;
+  font-size: 1.75rem;
+}
+
+button {
+  outline: none;
+  border: 1px solid $yellow;
+  background: $yellow;
+  text-align: center;
+  width: 180px;
+  height: 53px;
+  color: #fff;
+  font-weight: 700;
+  transition-duration: 300ms;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  &:hover {
+    background: #00000000;
+    color: $yellow;
+  }
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
