@@ -16,6 +16,7 @@ a:visited,
 a:hover {
   text-decoration: none;
   color: $dimGray;
+  font-family: $spaceMono;
 
   @media (max-with: 768px) {
     color: #fff;

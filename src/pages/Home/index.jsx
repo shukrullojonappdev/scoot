@@ -4,7 +4,6 @@ import React from "react";
 import MainImage from "../../assets/imgs/main-img.png";
 import MainImageTablet from "../../assets/imgs/main-img_tablet.png";
 import MainImageMobile from "../../assets/imgs/main-img_mobile.png";
-import Line from "../../assets/icons/Group 13 Copy.svg";
 import Mobile from "../../assets/icons/mobile.png";
 import Scooter from "../../assets/icons/scooter.png";
 import Rider from "../../assets/icons/rider.png";
