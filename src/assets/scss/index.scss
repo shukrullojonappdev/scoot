@@ -39,21 +39,25 @@ p {
 h1 {
   font-family: $spaceMono;
   font-size: 3.5rem;
+  line-height: 3.5rem;
 }
 
 h2 {
   font-family: $spaceMono;
   font-size: 3rem;
+  line-height: 3rem;
 }
 
 h3 {
   font-family: $spaceMono;
   font-size: 2.5rem;
+  line-height: 3rem;
 }
 
 h4 {
   font-family: $spaceMono;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
 }
 
 button {
@@ -67,10 +71,6 @@ button {
   font-weight: 700;
   transition-duration: 300ms;
   cursor: pointer;
-
-  @media (max-width: 768px) {
-    width: 100%;
-  }
 
   &:hover {
     background: #00000000;

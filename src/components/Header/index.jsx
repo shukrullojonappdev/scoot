@@ -8,13 +8,16 @@ import Close from "../../assets/icons/close.svg";
 
 function Header() {
   const [open, setOpen] = React.useState(false);
+  const body = document.querySelector("body");
 
   const handleToggleNav = () => {
     setOpen(!open);
+    open ? (body.style.overflow = "auto") : (body.style.overflow = "hidden");
   };
 
   const handleCloseNav = () => {
     setOpen(false);
+    body.style.overflow = "auto";
   };
 
   return (
@@ -46,7 +49,8 @@ function Header() {
           <div
             className={`${style.navigation} ${
               open ? `${style.open}` : `${style.close}`
-            }`}>
+            }`}
+          >
             <nav className={style.links}>
               <Link onClick={handleCloseNav} className={style.link} to="about">
                 About
@@ -54,17 +58,19 @@ function Header() {
               <Link
                 onClick={handleCloseNav}
                 className={style.link}
-                to="location">
+                to="location"
+              >
                 Location
               </Link>
               <Link
                 onClick={handleCloseNav}
                 className={style.link}
-                to="careers">
+                to="careers"
+              >
                 Careers
               </Link>
             </nav>
-            <button>Get Scootin</button>
+            <button className={style.button}>Get Scootin</button>
           </div>
         </header>
       </div>
