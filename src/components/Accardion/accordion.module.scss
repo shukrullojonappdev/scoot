@@ -1,0 +1,45 @@
+@import "../../assets/scss/variables";
+
+.wrapper {
+  background: $snow;
+  margin-bottom: 20px;
+}
+
+.panel {
+  transition-duration: 300ms;
+  padding: 0 20px 20px 20px;
+}
+
+.accordion {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    background: #fff4df;
+  }
+
+  img {
+    width: 20px;
+    height: 15px;
+    transition-duration: 300ms;
+  }
+}
+
+.opened {
+  display: block;
+}
+
+.closed {
+  display: none;
+}
+
+.opened_icon {
+  transform: rotate(0);
+}
+
+.closed_icon {
+  transform: rotate(-180deg);
+}

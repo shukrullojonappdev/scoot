@@ -1,0 +1,32 @@
+@import "../../assets/scss/variables";
+
+.accordion_box {
+  display: flex;
+  margin-bottom: 50px;
+
+  @media (max-width: 1060px) {
+    flex-direction: column;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  h3 {
+    flex: 2;
+  }
+
+  div {
+    flex: 4;
+  }
+}
+
+.faq {
+  margin-bottom: 90px;
+  h2 {
+    text-align: center;
+    color: $darkNavy;
+    margin: 40px 0;
+  }
+}
